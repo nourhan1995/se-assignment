@@ -6,7 +6,7 @@ Demonstrate your mastery of:
 
 - running nodejs
 - setting up a mongodb database
-- useing express
+- using express
 - connecting to the database
 - responding with a file
 - responding with JSON
@@ -41,9 +41,9 @@ You are to __fork__ this repository and submit a pull request when you are done
 
 Your job is to create a simple test driven inspirational quotes application that will show you a new inspirational quote every-time you click on the page as well as the author of the quote in the bottom right, the quote should be loaded using ajax.
 
-The application should inform the user somehow on how he can use it, in my case I made it so that the first time the app loads starts it says on the screen that you should click/tap
+The application should inform the user somehow on how he can use it, in my case I made it so that the first time the app starts it says on the screen that you should click/tap
 
-A demo that will only work in chrome and basically just looks like what we want you to do can be found [here](http://amrdraz.github.io/inspire-me/)
+__A demo that will only work in chrome and basically just looks like what we want you to do can be found [here](http://amrdraz.github.io/inspire-me/)__
 
 > If you want to have fun you can modify the data we give you and create your own set of quotes - for example make it an Arabic movie quotes app.
 
@@ -104,10 +104,11 @@ You will find in this repo the `.gitignore` and `quotes.json` files everything e
 
 - The app must serve the data from a mongodb database.
 - The app should implement a simple GET API for getting quotes.
+- quotes.js should impliment the functions bellow
 
 #### quotes.js
 
-Quotes.js module should export the following functions
+Export the following functions
 
 ##### `getElementByIndexElseRandom(array [, index])` 
 
@@ -129,7 +130,7 @@ getElementByIndexElseRandom([1, 3, 4], 0) // always 1
 getQuotesFromJSON() // basically returns the whole object.
 ```
 
-##### `getQuoteFromJSON(index)`
+##### `getQuoteFromJSON([index])`
 
 - returns a random quote from the quotes.json file if index is not passed else the on int the index position.
 
@@ -430,3 +431,9 @@ describe('API', function() {
 
 ```
 
+
+### Meta
+
+The assignment is worth 3% of your project grade
+It is individual
+Deadline Sunday the 28th of Feb
